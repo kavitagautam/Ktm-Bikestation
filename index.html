@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ktm-bikestation</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+ <!-- Also include jQueryUI -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--fontawasome-->
+<script src="https://kit.fontawesome.com/2d4e532760.js"></script>
+<script>
+        function openMenu()
+        {
+           document.getElementById('navLinks').style.left="0px";
+        }
+        
+        function closeMenu()
+        {
+           document.getElementById('navLinks').style.left = "-300px";
+        }
+    </script>
+</head>
+<body>
+
+    <section class="head">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-9 col-8">
+                    <div class="help">
+                        <span>Need any Help?<a href="#">01-42344567</a></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-4">
+                  <script>
+                    function searchbtn()
+                    {
+                      document.getElementById('search_id').style.display="block";
+                    }
+                    function closebtn()
+                    {
+                      document.getElementById('search_id').style.display="none";
+                    }
+                  </script>
+                  
+                  <div class="search-box">
+                    <button  onclick="searchbtn()"> <span><i class="fas fa-search"></i>SEARCH</span></button>
+                  </div>
+                  <div class="search"  id="search_id">
+                    <span class="icon"><i class="fas fa-search i-pad"></i></span>
+                    <input type="search" placeholder="Search..." />
+                    <button onclick="closebtn()" class="cross_icon"><i class="fas fa-times"></i></button>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-2 col-9">
+                    <div class="logo-img-container">
+                        <img src="assets/images/logo.fw.png" alt="logo">
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-3 nav-col">
+                    <button onclick="openMenu()" class="menu-icon"><i class="fas fa-bars"></i></button>
+                    <nav class="navbar-expand-sm">
+                        <ul class="navbar-nav menu-items"  id="navLinks">
+                              <li><button onclick="closeMenu()" class="cross-icon"><i class="fas fa-times"></i></button></li>
+                            <li class="nav-item ">
+                              <a class="nav-link active-nav" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item ">
+                                  <a class="nav-link" href="#">ALL STORIES</a>
+                                </li>
+                                <li class="nav-item ">
+                                      <a class="nav-link" href="#">PRODUCTS</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                          <a class="nav-link" href="#">GALLERY</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                              <a class="nav-link" href="#">NEWS & EVENTS</a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                  <a class="nav-link" href="#">SHOPS</a>
+                                                </li>
+                                                <li class="nav-item ">
+                                                    <a class="nav-link" href="#">DESTINATIONS</a>
+                                                  </li>
+                                              
+                            
+                         </ul>
+                  </nav>
+                </div>
+
+                <div class="col-lg-2">
+                    <a href="#" class="y-skew login">
+                        <span class="text-link"><i class="fas fa-user i-pad"></i>LOGIN</span>
+                    </a> 
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <div class="ban-img-container">
+                <img class="crop" src="assets/images/b300_mtbMarqueeImage.jpg" alt="banner">
+                <div class="carousel-caption words">
+                         <h3 class="head3">PHOTO OF THE DAY</h3>
+                         <h2 class="head2">Nothing Can Stop <span class="you-span">You</span></h2>
+                  </div>
+                </div>
+            </div>
+            
+              <div class="carousel-item">
+                <div class="ban-img-container">
+                <img class="crop" src="assets/images/unnamed.jpg" alt="banner">
+                <div class="carousel-caption words">
+                      <h3 class="head3">PHOTO OF THE DAY</h3>
+                      <h2 class="head2">Nothing Can Stop <span class="you-span">You</span></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+                      
+           
+          </div>
+    </section>
+
+    <section class="blogs padding-top padding-bottom">
+      <div class="container">
+        <h3 class="heading-3">RECENT STORIES FROM</h3>
+        <h2 class="heading-2">Riders Blog</h2>
+        <span class="line"></span>
+        <div class="row cus-row">
+
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="advent">
+              <b>APR 12</b>
+              <small>Ram Scottland</small>
+              <a href="#" class="a-skew">
+                <span class="text-link">ADVENTURE</span>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <a href="#">
+            <div class="blogs-overview">
+              <div class="blog-img-container">
+                <img class="crop" src="assets/images/blog1.jpeg" alt="Blog">
+              </div>
+              <h2 class="heading">Why Everyone Should Ride Bikes in the Dolomites?</h2>
+              <p class="para">The Dolomites are a majestic mountain range in the Alps, formed
+                 of light-colored dolomitic limestone that erosion has carved into 
+                 grotesque and impressive shapes. The region is located in the 
+                 northeast part of Italy and geographically, as well as culturally, 
+                 is at a crossroads..</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="advent">
+              <b>MAR 19</b>
+              <small>Ram Scottland</small>
+              <a href="#" class="a-skew">
+               <span class="text-link">ADVENTURE</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <a href="#">
+            <div class="blogs-overview">
+              <div class="blog-img-container">
+                <img class="crop" src="assets/images/blog2.jpeg" alt="Blog">
+              </div>
+              <h2 class="heading">Why Everyone Should Ride Bikes in the Dolomites?</h2>
+              <p class="para">The Dolomites are a majestic mountain range in the Alps, formed
+                 of light-colored dolomitic limestone that erosion has carved into 
+                 grotesque and impressive shapes. The region is located in the 
+                 northeast part of Italy and geographically, as well as culturally, 
+                 is at a crossroads..</p>
+            </div>
+          </a>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="advent">
+              <b>MAY 12</b>
+              <small>Ram Scottland</small>
+              <a href="#" class="a-skew">
+                <span class="text-link">ADVENTURE</span>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <a href="#">
+            <div class="blogs-overview">
+              <div class="blog-img-container">
+                <img class="crop" src="assets/images/blog3.jpeg" alt="Blog">
+              </div>
+              <h2 class="heading">Why Everyone Should Ride Bikes in the Dolomites?</h2>
+              <p class="para">The Dolomites are a majestic mountain range in the Alps, formed
+                 of light-colored dolomitic limestone that erosion has carved into 
+                 grotesque and impressive shapes. The region is located in the 
+                 northeast part of Italy and geographically, as well as culturally, 
+                 is at a crossroads..</p>
+            </div>
+          </a>
+          </div>
+
+        </div>
+
+        <div class="load-container flex">
+          <a href="#" class="load-button">
+          <span class="text-link">LOAD MORE</span>
+          </a>
+
+          <a href="#" class="story-button">
+          <span class="text-link">ALL STORIES</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="story">
+      <div class="story-overlay padding-top padding-bottom"> 
+       <div class="container">
+        <div class="row flex-row-reverse">
+
+         
+          <div class="col-lg-6">
+            <div class="words">
+            <h3 class="head3">TOP VIDEO STORY</h3>
+            <h2 class="head2">Nothing Can Stop <span class="you-span">You</span></h2>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="video-img-container">
+              <img class="crop" src="assets/images/story.jpeg" alt="story"> 
+               <!-- Trigger the modal with a button -->
+              <button type="button" class="play-button" data-toggle="modal" data-target="#myModal"> 
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+           
+            <!-- Modal -->
+            <div id="myModal" class="modal " role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-body">
+                  <iframe class="ifrm crop" src="https://www.youtube.com/embed/N-ZO2ILecoE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+            </div>
+          </div>
+       
+
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="featured-bikes padding-top padding-bottom">
+      <div class="container text-center">
+        <h3 class="heading-3">BEST RIDE COMPANIONS</h3>
+        <h2 class="heading-2">Featured Bikes</h2>
+        <div class="row">
+          
+          <div class="col-lg-6 order-lg-2 order-1">
+            <div class="mountain-trails-overview">
+              <div class="trails-img-container">
+                <img src="assets/images/mountain-trails.fw.png" alt="bike">
+              </div>
+            <div class="trails-details">
+              <h3 class="name">Mountain Trails pro acer bike</h3>
+              <small class="price"><span>Rs</span> 1,00,000</small>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 text-left order-lg-1 order-2">
+            <div class="row">
+            <div class="col-lg-12 col-md-6 col-sm-6">
+            <div class="bike-overview flex">
+              <div class="bike-img-container">
+                <img src="assets/images/pro-mountain-bike.fw.png" alt="bike">
+              </div>
+            <div class="bike-details">
+              <h3 class="name">Pro Mountain Bike</h3>
+              <span>Rs</span>
+              <small class="price">1,00,000</small>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-6 col-sm-6">
+            <div class="bike-overview flex">
+              <div class="bike-img-container">
+                <img src="assets/images/red-stylish-mountain.fw.png" alt="bike">
+              </div>
+            <div class="bike-details">
+              <h3 class="name">Red Stylish Mountain King</h3>
+              <span>Rs</span>
+              <small class="price">1,00,000</small>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+          
+
+         
+
+          <div class="col-lg-3 text-left order-lg-3 order-3">
+            <div class="row">
+              <div class="col-lg-12 col-md-6 col-sm-6">
+            <div class="bike-overview flex">
+              <div class="bike-img-container">
+                <img src="assets/images/pro-mountain-bike.fw.png" alt="bike">
+              </div>
+            <div class="bike-details">
+              <h3 class="name">Pro Mountain Bike</h3>
+              <span>Rs</span>
+              <small class="price">1,00,000</small>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-6 col-sm-6">
+            <div class="bike-overview flex">
+              <div class="bike-img-container">
+                <img src="assets/images/red-stylish-mountain.fw.png" alt="bike">
+              </div>
+            <div class="bike-details">
+              <h3 class="name">Red Stylish Mountain King</h3>
+              <span>Rs</span>
+              <small class="price">1,00,000</small>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        </div>
+
+        <a href="#" class="y-skew">
+          <span class="text-link">BROWSE ALL</span>
+        </a> 
+
+      </div>
+    </section>
+
+    <section class="join-wrapper">
+
+      <div class="container">
+        <h2 class="heading-2">Join Kathmandu <span>Bike</span> Station</h2>
+      </div>
+
+      <div class="join-details">
+        <div class="container">
+        <div class="row">
+
+        <div class="col-lg-9 col-md-8 col-sm-7">
+          <div class="kbs-join">
+            <h3>We are the top hub of professional riders,sellers
+              importers and buyers in Nepal.
+            </h3>
+          </div>
+
+          <a href="#" class="join-button-container">
+            <span class="text-link">JOIN NOW</span>
+          </a> 
+
+        </div>
+
+        <div class="col-lg-3 rider-col col-md-4 col-sm-5">
+          <div class="rider-img-container">
+            <img src="assets/images/rider.fw.png" alt="rider">
+          </div>
+        </div>
+
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+    <section class="accessories-wrapper padding-top padding-bottom">
+      <div class="container text-center">
+        <h2 class="heading-2">Parts and Accessories</h2>
+        <h3 class="heading-3">LATEST FROM OUR SELLERS</h3>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="parts-overview">
+            <div class="parts-img-container">
+              <img class="crop" src="assets/images/helmet-blue.fw.png" alt="parts">
+            </div>
+            <div class="parts-details">
+              <h3 class="name">Bontrager Solistice Youth Bike Helmet</h3>
+              <small class="price">Rs 5,000</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="parts-overview">
+            <div class="parts-img-container">
+              <img class="crop" src="assets/images/suspension.fw.png" alt="parts">
+            </div>
+            <div class="parts-details">
+              <h3 class="name">Magnesium aluminium alloy front Suspension</h3>
+              <small class="price">Rs 20,000</small>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="parts-overview">
+            <div class="parts-img-container">
+              <img class="crop" src="assets/images/helmet-black.fw.png" alt="parts">
+            </div>
+            <div class="parts-details">
+              <h3 class="name">Bontrager Solistice Youth Bike Helmet</h3>
+              <small class="price">Rs 5,000</small>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="parts-overview">
+            <div class="parts-img-container">
+              <img class="crop" src="assets/images/helmet-blue.fw.png" alt="parts">
+            </div>
+            <div class="parts-details">
+              <h3 class="name">Bontrager Solistice Youth Bike Helmet</h3>
+              <small class="price">Rs 5,000</small>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="parts-overview">
+            <div class="parts-img-container">
+              <img class="crop" src="assets/images/helmet-blue.fw.png" alt="parts">
+            </div>
+            <div class="parts-details">
+              <h3 class="name">Bontrager Solistice Youth Bike Helmet</h3>
+              <small class="price">Rs 5,000</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a href="#" class="y-skew">
+        <span class="text-link">BROWSE ALL</span>
+      </a> 
+
+      </div>
+    </section>
+
+
+    
+    <section class="destination-bg-wrapper">
+      <div class="destine-overlay"></div>
+    </section>
+
+    <section class="destination-wrapper">
+      <div class="container">
+        <h2 class="heading-2">Destinations</h2>
+        <h3 class="heading-3">BEST PLACES TO RIDE</h3>
+        <div class="row">
+
+          <div class="col-lg-4 ">
+            <div class="destination-overview">
+              <div class="destine-img-container">
+                <img class="crop" src="assets/images/destine1.jpeg" alt="destine">
+              </div>
+              <div class="destine-details">
+                <h3>Nagarkot</h3>
+              <div class="location flex">
+                <div class="loc-name">
+                  <span class="text-link"><i class="fas fa-map-marker-alt"></i>Bhaktapur</span>
+                </div>
+                <div class="way">
+                <span class="text-link"><i class="fas fa-road"></i>Moderate</span>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="destination-overview">
+              <div class="destine-img-container">
+                <img class="crop" src="assets/images/destine2.jpeg" alt="destine">
+              </div>
+              <div class="destine-details">
+                <h3>Namobuddha</h3>
+              <div class="location flex">
+                <div class="loc-name">
+                  <span class="text-link"><i class="fas fa-map-marker-alt"></i>Bhaktapur</span>
+                </div>
+                <div class="way">
+                <span class="text-link"><i class="fas fa-road"></i>Moderate</span>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="destination-overview">
+              <div class="destine-img-container">
+                <img class="crop" src="assets/images/destine3.jpeg" alt="destine">
+              </div>
+              <div class="destine-details">
+                <h3>Phulchowki</h3>
+              <div class="location flex">
+                <div class="loc-name">
+                  <span class="text-link"><i class="fas fa-map-marker-alt"></i>Bhaktapur</span>
+                </div>
+                <div class="way">
+                <span class="text-link"><i class="fas fa-road"></i>Moderate</span>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="registration-wrapper padding-top padding-bottom">
+      <div class="container text-center">
+        <h3 class="heading-3">ALWAYS RIDE SAFE</h3>
+        <h2 class="heading-2">Need Some Pro Tips?</h2>
+
+        <a href="#" class="y-skew">
+          <span class="text-link">REGISTER NOW</span>
+        </a>  
+
+         <div class="join">
+        <h4>Join us and Get Connected with the Professionals riders in Our Community.</h4>
+         </div>
+      </div>
+    </section>
+
+    
+    <section class="bike-industries-wrapper padding-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 ">
+            <div class="industry-img-container">
+              <img class="crop" src="assets/images/blog1.jpeg" alt="industries">
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 ">
+            <div class="industry-img-container">
+              <img class="crop" src="assets/images/destine2.jpeg" alt="industries">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partner-wrapper padding-top padding-bottom">
+      <div class="container">
+          <div class="partner-img-container">
+          <img class="crop" src="assets/images/all_logos.fw.png" alt="partner">
+          </div>
+      </div>
+    </section>
+
+
+    <footer class="footer padding-top padding-bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-12 foot-col text-right">
+            <div class="about text-left">
+              <h2 class="foot-head">Kathmandu <span class="span-c"> Bike</span> Station</h2>
+              <p>We are the top hub of professional riders, sellers, 
+                importers and buyers in Nepal. Join our community to
+                 find best products and stay connected with top
+                  prodfessional riders and find best trails for your
+                   adventure ride.</p>
+
+                   <div class="contact">
+                     <a href="#"><i class="fas fa-tty"></i>01-41234567</a>
+                     <a href="#"><li>ABOUT US</li></a>
+                     <a href="#"><li>CONTACT US</li></a>
+                   </div>
+
+                   <div class="email">
+                     <label>Stay Updated</label>
+                     <input type="text" name="email" placeholder="Your Email Address" required>
+                   </div>
+            </div>
+
+            <button class="a-skew">
+              <span class="text-link">SUBSCRIBE</span>
+            </button>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="destiny">
+            <h2 class="foot-head">Shops</h2>
+            <ul>
+              <li><a href="#">Kathmandu</a></li>
+              <li><a href="#">Bhaktapur</a></li>
+              <li><a href="#">Lalitpur</a></li>
+              <li><a href="#">Chitwan</a></li>
+              <li><a href="#">Pokhara</a></li>
+              <li><a href="#">Birgunj</a></li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="destiny">
+            <h2 class="foot-head">Top <span class="span-c"> Destinations</span></h2>
+            <ul>
+              <li><a href="#">Nagarkot</a></li>
+              <li><a href="#">Namobuddha</a></li>
+              <li><a href="#">Phulchowki</a></li>
+              <li><a href="#">Lakhuri Bhanjyang</a></li>
+              <li><a href="#">Bhote Chaur</a></li>
+              <li><a href="#">Sundarijal-Chisapani</a></li>
+            </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+    <section class="foot">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 col-12">
+            <div class="copyright">
+            <small>Copyrights 2019.All Rights Reserved.</small>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-7">
+            <div class="medias flex">
+              <a href="#" class="link">
+              <span class="text-link"><i class="fab fa-facebook-f"></i></span>
+              </a>
+              <a href="#" class="link">
+              <span class="text-link"><i class="fab fa-twitter"></i></span>
+              </a>
+              <a href="#" class="link">
+              <span class="text-link"><i class="fab fa-google-plus-g"></i></span>
+              </a>
+              </div>
+          </div>
+
+          <div class="col-lg-2 col-5">
+            <small>Site By: <a href="#">Designer</a></small>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <script src="assets/owl.carousel.min.js"></script>
+
+    <script>
+    $('.owl-carousel').owlCarousel({
+    loop:false,
+    autoplay:true,
+    autoplayTimeout:4000,
+    responsiveClass:true,
+    rewind:true,
+    autoplayHoverPause:true,
+    margin:30,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        576:{
+            items:2
+        },
+        768:{
+            items:3
+        },
+        1192:{
+            items:3
+        },
+        1200:{
+            items:4
+        }
+    }
+})
+    </script>
+    
+    
+</body>
+</html>
+
